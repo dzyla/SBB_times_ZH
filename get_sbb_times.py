@@ -5,13 +5,13 @@ import glob
 
 
 # open all cities data
-cities = r'H:\PycharmProjects\untitled1\Swiss_stops.csv'
+cities = r'Swiss_stops.csv'
 cities = pd.read_csv(cities, sep=',', encoding='utf-8')
 city_names = list(cities['Nom'])
 cities_shape = cities.shape
 
 # join arrays despite the redundancy
-times_arrays = glob.glob(r'H:\PycharmProjects\untitled1\*.npy')
+times_arrays = glob.glob(r'*.npy')
 
 if len(times_arrays) != 0:
 
@@ -32,7 +32,7 @@ else:
     final_arr = np.zeros((2,2))
 
 # Check if all stops were already checked
-final_arr = np.load(r'H:\PycharmProjects\untitled1\final_time_array.npy', allow_pickle=True)
+final_arr = np.load(r'final_time_array.npy', allow_pickle=True)
 names_to_search = []
 for city_name_ in city_names:
     if city_name_ not in final_arr[:,0]:
