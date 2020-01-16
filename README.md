@@ -22,5 +22,5 @@ Secondly, having all travel times from Zurich, HB I could add them in pandas to 
 Plotting the map was slighly more challanging than expected. I used the google maps python plotting library (GoogleMapPlotter). It's not optimal but works. Maybe someone else could try to improve the visualization of the data.
 
 ## Quick look at the map
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![alt text](https://github.com/dzyla/SBB_times_ZH/blob/master/Untitled1.png)
 
