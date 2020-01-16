@@ -26,5 +26,8 @@ The map file is not included here (it’s 45 MB html file) and has to be generat
 
 Is there anything interesting what the map shows? It's quite easy and relatively fast to get to most places in Switzerland. There are some outliers (St. Galen and Appenzeller cantons) where is relatively close but hard to get. It takes longer to get to not very populated places which are quite close (e.g. UNESCO Biosphäre Entlebuch). There is also a lot of Switzerland which is not available by public transport, mostly due to high mountains. Another observation is that it is much easier to travel to places north from the mountains.
 
+## To do
+I still need to add the legend!
+
 ## Final thoughts
 Overall, I was expecting slightly bigger differences, but as I mentioned already, it was a fun project. The data can be used in many other plots and analyses. In theory, the same map can be done from any other public transport stop in Switzerland, once would have to replace the reference city in the get_sbb_times.py.
