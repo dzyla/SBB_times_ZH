@@ -10,6 +10,9 @@ First I had to get the list of all stops in Switzerland. It is really surprising
 As I learned already multiple times, the distance to place is not always correlated with the travel time (that's why I had the idea of this map). To the next point was to check how long does it take to travel somewhere with SBB. Fortunately, there is an API for searching SBB connections, already in Python (PySBB). First idea was to get the data for all stops (27680 x 27680) but I quickly dropped the idea. Firstly, SBB webserver API has 1000 requests limit per day per IP. Secondly, honestly, I cared only about Zurich where I live in.
 The last thing which I was completely unaware but very important if I would like to plot anything. Apparently, Switzerland does not use the standard coordinate system, but one centred on... Bern. Fortunately, there is available easy conversion script also in Python (and other languages) called Swisstopo-WGS84-LV03 available on Github (https://github.com/ValentinMinder/Swisstopo-WGS84-LV03).
 
+## Dependencies
+Numpy, pandas, gmplot, pySBB, glob, colour and switzerland_coordinate_system_convert (included)
+
 ## Implementation
 In the beginning, I have fetched the travel times from SBB and saved them as a single numpy array. Due to the fact that there are only 1000 requests per day per IP, I had to save and merge the new data with already fetched.
 Secondly, having all travel times from Zurich, HB I could add them in pandas to CSV file. In addition I also converted the LV03 to WGS84 coordinates and also added them to csv.
