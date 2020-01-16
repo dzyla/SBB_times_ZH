@@ -19,8 +19,12 @@ In the beginning I have fetched the travel times from SBB and saved them as a si
 
 Secondly, having all travel times from Zurich, HB I could add them in pandas to csv file. In addition I also converted the LV03 to WGS84 coordinates and also added them to csv. 
 
-Plotting the map was slighly more challanging than expected. I used the google maps python plotting library (GoogleMapPlotter). It's not optimal but works. Maybe someone else could try to improve the visualization of the data.
+Plotting the map was slighly more challanging than expected. I used the google maps python plotting library (GoogleMapPlotter). It's not optimal but works. Maybe someone else could try to improve the visualization of the data. The distances are showed from Red to Blue/Purple based on the hue shift in HSV. This is really the parts I struggled the most ;)
 
 ## Quick look at the map
 ![alt text](https://github.com/dzyla/SBB_times_ZH/blob/master/Untitled1.png)
 
+Is there anything what the map shows? It's quite easy and relatively fast to get to the most places in Switzerland. There are some outliers (St. Galen and Appenzeler cantons) where is relatively close but hard to get. It takes longer to get to not very populated places which are quite close (e.g. UNESCO Biosphäre Entlebuch). There is also a lot of Switzerland which is not avaiable by public transport, mostly due to really high mountains. Another observation is that it is much easier to travel to places north from the mountains.
+
+## Final thoughts
+Overall, was expecting slighly bigger differences but as I mentioned already it was fun project. The data can be used in many other plots and analyzes. In theory, the same map can be done from any other public transport stop in Switzerland, once would just have to replace the reference city in the get_sbb_times.py.
